@@ -11,7 +11,7 @@ const data = [
   {
     id: 1,
     avatar: author,
-    authorName: 'Joan Wangechi',
+    authorName: 'Joan Wangeci',
     designation: 'Message from the CEO',
     text: `As a truly customer-centric company, we focus on the creation of a new value to achieve sustainable growth.`,
   }
