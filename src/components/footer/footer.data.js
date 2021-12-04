@@ -1,7 +1,6 @@
 import facebook from 'assets/images/icons/facebook.png';
 import twitter from 'assets/images/icons/twitter.png';
-import github from 'assets/images/icons/github.png';
-import dribbble from 'assets/images/icons/dribbble.png';
+import instagram from 'assets/images/icons/instagram.png';
 
 export const menuItems = [
   {
@@ -98,14 +97,9 @@ export const menuItems = [
       },
       {
         path: '#!',
-        icon: github,
-        label: 'Github',
-      },
-      {
-        path: '#!',
-        icon: dribbble,
-        label: 'Dribbble',
-      },
+        icon: instagram,
+        label: 'Instagram',
+      }
     ],
   },
 ];

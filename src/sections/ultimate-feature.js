@@ -13,39 +13,39 @@ import icon6 from 'assets/images/services/6.png';
 const data = [
   {
     id: 1,
-    icon: icon1,
-    title: 'ultimate Email  subscription',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
+    icon: icon6,
+    title: 'Ecommerce websites',
+    description: `Get your business a functional online market place and increase yours orders.`,
   },
   {
     id: 2,
     icon: icon2,
-    title: 'Bolt Performance',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
+    title: 'Landing pages',
+    description: `Get your Company/Product an online professional presence.`,
   },
   {
     id: 3,
-    icon: icon3,
-    title: 'Secure Transaction',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
+    icon: icon4,
+    title: 'Cheap hosting',
+    description: `Get your Business website affordable hosting for as low as Ksh 900/month.`,
   },
   {
     id: 4,
-    icon: icon4,
-    title: 'Multiple Options',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
+    icon: icon3,
+    title: 'App wide Security',
+    description: `Carry out Secure online transactions with popular service providers.`,
   },
   {
     id: 5,
     icon: icon5,
     title: '5 Star Rating service',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
+    description: `Work with Highly Certified professionals and get value for your money.`,
   },
   {
     id: 6,
-    icon: icon6,
-    title: 'Integrated with Shopify',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
+    icon: icon1,
+    title: 'Student Software Projects',
+    description: `Get help with your School Software projects at student friendly prices.`,
   },
 ];
 
@@ -55,8 +55,8 @@ const UltimateFeatures = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          slogan="Product features"
-          title="Ultimate features that works"
+          slogan="JODAWAKI enterprise"
+          title="Core features and services"
         />
         <Box sx={styles.features}>
           {data?.map((item) => (

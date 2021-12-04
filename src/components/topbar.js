@@ -24,7 +24,7 @@ const TopBar = () => {
     <Box as="section" sx={styles.topbar}>
       <Box sx={styles.content}>
         <Text as="span" className="caption">
-          <GiftBox /> Cyber monday sale begin, just grave the hot pricing
+          <GiftBox /> Get discount hosting plans for
         </Text>
         <Text as="span" className="tlds">
           {data.map((item, i) => (

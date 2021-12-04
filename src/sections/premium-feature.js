@@ -6,29 +6,26 @@ import ipad from 'assets/images/ipad.png';
 
 const data = [
   {
-    title: 'Organize your project content',
+    title: 'Organized project content',
     contents: (
       <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
+        Tell us what kind of application suits you best, tell us what you need and we shall build it.
       </div>
     ),
   },
   {
-    title: 'Collaborate your documents easily',
+    title: 'Collaborative environment',
     contents: (
       <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
+        Work closely with a developer and someone tasked with understanding your project.
       </div>
     ),
   },
   {
-    title: `Build your team's knowledge base`,
+    title: `Timely deliveries`,
     contents: (
       <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
+        We shall meet our deadlines and ensure you enjoy working with us.
       </div>
     ),
   },
@@ -45,9 +42,9 @@ const PremiumFeature = () => {
         <Box sx={styles.accordionGroup}>
           <SectionHeading
             sx={styles.heading}
-            slogan="Website content builder"
-            title="Meet our premium features that will make you wow"
-            description="Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents."
+            slogan="Website and MobileApp Builders"
+            title="Meet our premium services that will make you wow"
+            description="A single developer dedicated to Building for you incredible applications and grow your business with Gusto’s all-in-one platform with amazing contents."
           />
           <Accordion items={data} />
         </Box>

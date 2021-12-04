@@ -32,7 +32,7 @@ const Banner = () => {
       <Container>
         <Box sx={styles.grid}>
           <Box as="form" sx={styles.domainCard}>
-            <Heading>Built your business with a website</Heading>
+            <Heading>Grow your business with a website</Heading>
             <List>
               <ul>
                 <li>~ Cheap Hosting</li>

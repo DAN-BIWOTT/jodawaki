@@ -11,24 +11,10 @@ const data = [
   {
     id: 1,
     avatar: author,
-    authorName: 'Melina Pettendorfer',
-    designation: 'CEO of Uber',
-    text: `Best host I've had in 10 years. Smooth migration, no stress, and friendly support one click away. I'm very happy and recommend their services`,
-  },
-  {
-    id: 2,
-    avatar: author,
-    authorName: 'Melina Pettendorfer',
-    designation: 'CEO of Google',
-    text: `Best host I've had in 10 years. Smooth migration, no stress, and friendly support one click away. I'm very happy and recommend their services`,
-  },
-  {
-    id: 3,
-    avatar: author,
-    authorName: 'Melina Pettendorfer',
-    designation: 'CEO of Microsoft',
-    text: `Best host I've had in 10 years. Smooth migration, no stress, and friendly support one click away. I'm very happy and recommend their services`,
-  },
+    authorName: 'Joan Wangechi',
+    designation: 'Message from the CEO',
+    text: `As a truly customer-centric company, we focus on the creation of a new value to achieve sustainable growth.`,
+  }
 ];
 
 const Testimonials = () => {

@@ -8,106 +8,111 @@ import SlickArrow from 'components/slick-arrow';
 const data = [
   {
     id: 1,
-    title: 'Startup Pack',
-    subtitle: 'For the startup team who work with new come data stack',
-    price: 25.99,
+    title: 'Student Pack',
+    subtitle: 'For the students that need their basic school project requirements met',
+    price: '2,000-5,000',
     isRecommended: false,
-    buttonText: 'Start Free Trial',
+    buttonText: 'Get Started',
     features: [
       {
         id: 1,
         isAvailable: true,
-        title: 'Ultimate access to all course, exercises and assessments',
+        title: 'Project delivery 2-3 weeks.',
       },
       {
         id: 2,
         isAvailable: true,
-        title: `Free access for all kind of exercise corrections with downloads.`,
+        title: `4 zoom meetings explaining how the project objectives have been met.`,
       },
       {
         id: 3,
         isAvailable: true,
-        title: `Total assessment corrections with free download access system`,
+        title: `Free hosting for a month.`,
       },
       {
         id: 4,
-        isAvailable: false,
-        title: `Unlimited download of courses on the mobile app contents`,
+        isAvailable: true,
+        title: `AI projects, mobile applications, web applications, algorithm implimentations etc.`,
       },
       {
         id: 5,
         isAvailable: false,
-        title: `Download and print courses and exercises in PDF`,
+        title: `Documentation of project. (Only software developement shall be done)`,
       },
     ],
   },
   {
     id: 2,
-    title: 'Premium Pack',
-    subtitle: 'For the organization who work with new come data stack',
-    price: 29.99,
+    title: 'Small Business Pack',
+    subtitle: 'For small businesses with basic requirements.',
+    price: '5,000-9,000',
     isRecommended: true,
-    buttonText: 'Start Free Trial',
+    buttonText: 'Get Started',
     features: [
       {
         id: 1,
         isAvailable: true,
-        title: 'Ultimate access to all course, exercises and assessments',
+        title: 'Database to store and manage your products.',
       },
       {
         id: 2,
         isAvailable: true,
-        title: `Free access for all kind of exercise corrections with downloads.`,
+        title: `Beautiful application designs.`,
       },
       {
         id: 3,
         isAvailable: true,
-        title: `Total assessment corrections with free download access system`,
+        title: `Dedicated project managers that will make sure your projects are delivered on time`,
       },
       {
         id: 4,
         isAvailable: true,
-        title: `Unlimited download of courses on the mobile app contents`,
+        title: `Beautiful adminstration panel.`,
       },
       {
         id: 5,
         isAvailable: true,
-        title: `Download and print courses and exercises in PDF`,
+        title: `Custom features can be requested and pricing can be negotiated with your project manager`,
       },
     ],
   },
   {
     id: 3,
-    title: 'Ultimate Pack',
+    title: 'Startup Company Plan',
     subtitle: 'For the ultimate company team who work with new come data stack',
-    price: 34.99,
+    price: '10,000-30,000',
     isRecommended: false,
-    buttonText: 'Start Free Trial',
+    buttonText: 'Get Started',
     features: [
       {
         id: 1,
         isAvailable: true,
-        title: 'Ultimate access to all course, exercises and assessments',
+        title: 'Private source code.',
       },
       {
         id: 2,
         isAvailable: true,
-        title: `Free access for all kind of exercise corrections with downloads.`,
+        title: `Project developement costs and software purchase done by JODAWAKI.`,
       },
       {
         id: 3,
         isAvailable: true,
-        title: `Total assessment corrections with free download access system`,
+        title: `Purchase of domain name done by JODAWAKI`,
       },
       {
         id: 4,
         isAvailable: true,
-        title: `Unlimited download of courses on the mobile app contents`,
+        title: `Relational database design and developement included.`,
       },
       {
         id: 5,
         isAvailable: true,
-        title: `Download and print courses and exercises in PDF`,
+        title: `High security consideration throughout developement`,
+      },
+      {
+        id: 6,
+        isAvailable: true,
+        title: `Timely deliveries ensured by project managers`,
       },
     ],
   },
@@ -149,8 +154,8 @@ const Pricing = () => {
       <Container sx={styles.container}>
         <SectionHeading
           sx={styles.heading}
-          slogan="Deal for your business"
-          title="Meet our pricing plan that suit you"
+          slogan="You may discuss with your project manager to get a custom price plan."
+          title="Common pricing plans that may best define you"
         />
         <Slider sx={styles.grid} {...settings}>
           {data?.map((price, index) => (

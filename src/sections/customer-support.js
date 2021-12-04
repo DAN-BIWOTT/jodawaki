@@ -5,10 +5,10 @@ import { IoIosCheckmarkCircle } from 'react-icons/io';
 import Image from 'components/image';
 
 const list = [
-  'Medical and vision',
-  'Life insurance',
-  'HSAs and FSAs',
-  'Commuter benefits',
+  'Project Description Consultation',
+  'Price Consultation',
+  'Renew hosting plans Consultation',
+  'Project timeline adjustment consultation',
 ];
 
 const CustomerSupport = () => {
@@ -36,13 +36,12 @@ const CustomerSupport = () => {
           </Box>
           <Box sx={styles.content}>
             <Heading sx={styles.title}>
-              Customer support is our main priority with their hundred percent
-              satisfaction.
+              Unrestricted customer support.
             </Heading>
             <Text as="p" sx={styles.summary}>
-              Get your tests delivered at let home collect sample from the
-              victory of the managements that supplies best design system
-              guidelines ever.
+             Talk freely and get timely responses from any communication
+             medium you choose. Whats app, Instagram, text, emails or calls, 
+             We do the most to serve you well.
             </Text>
 
             <Grid sx={styles.list} as="ul">
@@ -120,7 +119,7 @@ const styles = {
   },
   list: {
     gap: '0 18px',
-    gridTemplateColumns: ['repeat(2, 142px)', null, null, 'repeat(2, 200px)'],
+    // gridTemplateColumns: ['repeat(2, 142px)', null, null, 'repeat(2, 200px)'],
     justifyContent: [null, null, null, 'center', 'unset'],
     listStyle: 'none',
     mt: [4, null, null, 5, 4, 5],
