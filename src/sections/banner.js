@@ -2,52 +2,18 @@
 import {
   jsx,
   Box,
-  Flex,
   Text,
-  Input,
-  Label,
-  Button,
-  Select,
   Heading,
   Container,
 } from 'theme-ui';
 import { useStaticQuery, graphql } from 'gatsby';
-import { useState } from 'react';
 import { rgba } from 'polished';
 import Image from 'components/image';
+import Styled from 'styled-components';
 
-const tlds = [
-  {
-    label: '.com',
-    value: '.com',
-  },
-  {
-    label: '.net',
-    value: '.net',
-  },
-  {
-    label: '.org',
-    value: '.org',
-  },
-];
 
 const Banner = () => {
-  const [state, setState] = useState({
-    domainName: '',
-    tld: '',
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(state);
-  };
-
-  const handleChange = (e) => {
-    setState({
-      ...state,
-      [e.target.id]: e.target.value,
-    });
-  };
+ 
 
   const data = useStaticQuery(graphql`
     query {
@@ -65,33 +31,18 @@ const Banner = () => {
     <Box as="section" id="home" sx={styles.section}>
       <Container>
         <Box sx={styles.grid}>
-          <Box as="form" sx={styles.domainCard} onSubmit={handleSubmit}>
+          <Box as="form" sx={styles.domainCard}>
             <Heading>Built your business with a website</Heading>
-            <Flex sx={styles.inputGroup}>
-              <Label htmlFor="domainName" variant="styles.srOnly">
-                Your Domain Name
-              </Label>
-              <Input
-                type="text"
-                id="domainName"
-                value={state.domainName}
-                onChange={handleChange}
-                placeholder="Your domain name"
-              />
-              <Label htmlFor="tld" variant="styles.srOnly">
-                Select TLD
-              </Label>
-              <Select id="tld" defaultValue={state.tld} onChange={handleChange}>
-                {tlds.map((tld, i) => (
-                  <option key={i}>{tld.label}</option>
-                ))}
-              </Select>
-            </Flex>
-            <Button type="submit" variant="primary" sx={styles.submit}>
-              Start for free
-            </Button>
+            <List>
+              <ul>
+                <li>~ Cheap Hosting</li>
+                <li>~ Cheap Domain Names</li>
+                <li>~ Top Class Services On A Budget</li>
+                <li>~ Work With Certified Professionals And Meet Your Business Needs</li>
+              </ul>
+            </List>
             <Text as="p" sx={styles.note}>
-              No credit card required.
+              Expose yourself to the world.
             </Text>
           </Box>
           <Box as="figure" sx={styles.illustration}>
@@ -145,56 +96,6 @@ const styles = {
       mb: [5, null, null, 7, 8],
     },
   },
-  inputGroup: {
-    alignItems: 'center',
-    border: (theme) => `1px solid ${theme.colors.borderColor}`,
-    borderRadius: 5,
-    px: [3, null, null, 6],
-    input: {
-      border: 0,
-      borderRadius: 0,
-      fontSize: [1, null, null, 2],
-      minHeight: [45, null, null, 60],
-      p: 0,
-      ':focus': {
-        boxShadow: 'none',
-      },
-      '::placeholder': {
-        fontSize: '15px',
-        lineHeight: 1.33,
-        color: rgba('#02073E', 0.4),
-      },
-      ':-webkit-autofill': {
-        WebkitBoxShadow: '0 0 0 30px white inset !important',
-      },
-    },
-    select: {
-      border: 0,
-      color: 'textSecondary',
-      fontWeight: 500,
-      fontSize: [0, null, null, '15px'],
-      lineHeight: 1.33,
-      letterSpacing: 'heading',
-      minHeight: [45, null, null, 60],
-      minWidth: [60, null, null, 75],
-      p: 0,
-      textTransform: 'uppercase',
-      ':focus': {
-        outline: 0,
-      },
-      '+ svg': {
-        color: '#A6A8BB',
-        height: 40,
-        width: 40,
-      },
-    },
-  },
-  submit: {
-    fontSize: [1, null, null, 2],
-    mt: [4],
-    minHeight: [45, null, null, 60],
-    width: '100%',
-  },
   note: {
     fontStyle: 'italic',
     fontSize: [0, null, null, '15px'],
@@ -204,3 +105,11 @@ const styles = {
     mt: [4],
   },
 };
+
+const List = Styled.div`
+
+  li{
+    font-size: 1rem clamp(25px);
+    list-style-type:none;
+  }
+`

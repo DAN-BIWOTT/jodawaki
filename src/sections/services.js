@@ -5,37 +5,21 @@ import Service from 'components/cards/service';
 
 const services = [
   {
-    title: 'Cloud Hosting',
-    price: 0.63,
+    title: 'Blog Hosting',
+    price: 900,
   },
   {
-    title: 'Web Hosting',
-    price: 0.75,
+    title: 'School Project Web Hosting',
+    price: 500,
   },
   {
-    title: 'VPS Hosting',
-    price: 0.68,
+    title: 'Small Business Web Hosting',
+    price: 1400,
   },
   {
-    title: 'Wordpress Hosting',
-    price: 0.72,
-  },
-  {
-    title: 'Domains',
-    price: 0.63,
-  },
-  {
-    title: 'Email Hosting',
-    price: 0.56,
-  },
-  {
-    title: 'VPN Service',
-    price: 0.69,
-  },
-  {
-    title: 'Image Cloud',
-    price: 0.75,
-  },
+    title: 'Start-Up Company Web Hosting',
+    price: 2000,
+  }
 ];
 
 const Services = () => {

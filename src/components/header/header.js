@@ -74,7 +74,7 @@ export default function Header() {
                   color: state.isSticky ? 'white' : 'primary',
                 }}
               >
-                Join Community
+                Get Started
               </Button>
             </Flex>
 

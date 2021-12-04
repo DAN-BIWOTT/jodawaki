@@ -23,7 +23,7 @@ const PriceTable = ({ price }) => {
           {price.subtitle}
         </Text>
         <Text as="p" sx={styles.priceAmount}>
-          ${price?.price}
+          Ksh{price?.price}
           /mo
         </Text>
         <Button sx={styles.button} variant="text">
