@@ -7,6 +7,7 @@ import TopBar from 'components/topbar';
 import LockIcon from 'components/icons/lock';
 import HamburgerMenu from 'components/hamburger';
 import Navbar from './navbar';
+import { Link } from 'gatsby';
 
 export default function Header() {
   const [state, setState] = useState({
@@ -67,6 +68,8 @@ export default function Header() {
                 Login
               </Button>
               <Button
+                as={Link}
+                to="/admin"
                 variant="text"
                 sx={{
                   ...styles.joinCommunity,
