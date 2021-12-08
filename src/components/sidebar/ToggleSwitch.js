@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { useThemeContext } from "../../context/themeContext";
 
 const ToggleSwitch = () => {
+    const { toggleTheme } = useThemeContext()
   return (
     <Switch>
       <input
         className="switch__input"
         type="checkbox"
         id="switchCheckbox1"
-        onClick={()=>{}}
+        onClick={toggleTheme}
       />
       <label
         aria-hidden="true"

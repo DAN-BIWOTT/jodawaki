@@ -1,29 +1,19 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 import Dashboard from "../containers/Dashboard";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../styles/global";
 import { darkTheme, lightTheme } from "../styles/theme";
-
+import { ThemeContextProvider, useThemeContext } from "../context/ThemeContext.js";
 
 const Admin = () => {
-  const data = useStaticQuery(graphql`
-    query MyQuery {
-      allMongodbJodawakiJodawakiUsers {
-        edges {
-          node {
-            firstName
-          }
-        }
-      }
-    }
-  `);
-
+  const { theme } = useThemeContext()
   return (
-    <ThemeProvider theme={lightTheme}>
-      <GlobalStyles />
-      <Dashboard />
-    </ThemeProvider>
+    <ThemeContextProvider>
+      <ThemeProvider theme={theme === 'light' ? lightTheme: darkTheme}>
+        <GlobalStyles />
+        <Dashboard />
+      </ThemeProvider>
+    </ThemeContextProvider>
   );
 };
 

@@ -4,9 +4,9 @@ import { Icon } from "@iconify/react";
 
 const MenuItem = ({ title, active, icon }) => {
   return (
-    <Container active={active}>
-      <IconCustom active={active} icon={`mdi-light:${icon}`} inline={false} />
-      <Title active={active}>{title}</Title>
+    <Container active={active?"true":"false"}>
+      <IconCustom active={active?"true":"false"} icon={`mdi-light:${icon}`} inline={false} />
+      <Title active={active?"true":"false"}>{title}</Title>
     </Container>
   );
 };
