@@ -58,6 +58,8 @@ export default function Header() {
             />
             <Flex sx={styles.buttonGroup}>
               <Button
+              as={Link}
+              to="/login"
                 variant="text"
                 sx={{
                   ...styles.login,
