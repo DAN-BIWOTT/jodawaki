@@ -50,7 +50,7 @@
     "start": "concurrently \"gatsby develop\" \"npm run server\" "
   },
   "engines": {
-    "node": ">=16"
+    "node": "14.x"
   },
   "nodemonConfig": {
     "watch": [
